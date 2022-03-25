@@ -1,8 +1,9 @@
 'use strict';
 
-const { gamesCollection } = require('../src/models');
 const express = require(express);
 const router = express.Router();
+const { gamesCollection } = require('../src/models');
+
 
 router.post('/games', async (request, response, next) => {
   let newSeriesData = request.body;

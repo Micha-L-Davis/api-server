@@ -1,8 +1,8 @@
 'use strict';
-
-const { seriesCollection } = require('../src/models');
 const express = require(express);
 const router = express.Router();
+const { seriesCollection } = require('../src/models');
+
 
 router.post('/series', async (request, response, next) => {
   let newSeriesData = request.body;
