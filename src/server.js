@@ -1,13 +1,13 @@
 'use strict';
 
+const express = require('express');
+const app = express();
+
 const logRoute = require('./middleware/logger');
 const seriesRouter = require('../routes/series');
 const gamesRouter = require('../routes/games');
 const error404 = require('./error-handlers/404');
 const error500 = require('./error-handlers/500');
-
-const express = require('express');
-const app = express();
 
 app.use(express.json());
 
